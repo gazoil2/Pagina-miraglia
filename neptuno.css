@@ -1,0 +1,23 @@
+body {
+    background-color: #ffffff;  
+
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+article{
+    text-align: center;
+}
+
+article li {
+    list-style: none;
+}
