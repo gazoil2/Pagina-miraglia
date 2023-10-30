@@ -1,39 +1,5 @@
-/*
 
-body {
-    background-color: #ffffff;  
 
-}
-
-header {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 10px;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    border: #343a40 1px solid;
-}
-
-article{
-    text-align: center;
-}
-
-.marte{
-    color: crimson;
-}
-
-.neptuno{
-    color:rgb(25, 25, 217);
-}
-
-.sol{
-    color: darkorange;
-}
-
-*/
 
 @font-face {
     font-family: 'calibre';
