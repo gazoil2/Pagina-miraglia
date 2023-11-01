@@ -3,34 +3,11 @@ body {
 }
 
 header {
-    background-color: #343a40;
+    background-color: var(--color-header);
     color: #ffffff;
     padding: 10px;
 }
 
-
-aside {
-    right: 10px;
-    top: 190px;
-    position: absolute;
-    background-color: #343a40;
-    color: white;
-    border-radius: 8px;
-}
-
-
-aside ul{
-    padding: 0;
-    list-style: none;
-}
-aside a{
-    color: var(--color-link);
-
-}
-
-aside a:hover{
-    color: var(--color-secundario);
-}
 section {
     padding: 20px;
     margin: 20px;
@@ -59,8 +36,13 @@ article li {
     height: 300px;
     text-align: center;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
+
+.caracteristica-neputno{
+    width: 400px;
+}
 #neptuno {
     position: absolute;
     left: -400px;
