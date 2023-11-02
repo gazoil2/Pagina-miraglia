@@ -1,5 +1,39 @@
+/*
 
+body {
+    background-color: #ffffff;  
 
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: #343a40 1px solid;
+}
+
+article{
+    text-align: center;
+}
+
+.marte{
+    color: crimson;
+}
+
+.neptuno{
+    color:rgb(25, 25, 217);
+}
+
+.sol{
+    color: darkorange;
+}
+
+*/
 
 @font-face {
     font-family: 'calibre';
@@ -66,7 +100,7 @@
     --_planeta-color: gray;
     --_planeta-nombre: 'MERCURIO';
 
-    --_tamaño-orbita: calc(var(--_orbita-numero) * 200px);
+    --_tamaño-orbita: calc(20dvh * var(--_orbita-numero));
 }
 
 .venus-contenedor {
@@ -79,7 +113,7 @@
     --_planeta-color: #a5722a;
     --_planeta-nombre: 'VENUS';
 
-    --_tamaño-orbita: calc(var(--_orbita-numero) * 200px);
+    --_tamaño-orbita: calc(20dvh * var(--_orbita-numero));
 }
 
 .tierra-contenedor {
@@ -92,7 +126,7 @@
     --_planeta-color: #2b2bd2;
     --_planeta-nombre: 'TIERRA';
 
-    --_tamaño-orbita: calc(var(--_orbita-numero) * 200px);
+    --_tamaño-orbita: calc(20dvh * var(--_orbita-numero));
 }
 
 .marte-contenedor {
@@ -105,7 +139,7 @@
     --_planeta-color: #ff4000;
     --_planeta-nombre: 'MARTE';
 
-    --_tamaño-orbita: calc(var(--_orbita-numero) * 200px);
+    --_tamaño-orbita: calc(20dvh * var(--_orbita-numero));
 }
 
 .jupiter-contenedor {
@@ -118,7 +152,7 @@
     --_planeta-color: #deb887;
     --_planeta-nombre: 'JUPITER';
 
-    --_tamaño-orbita: calc(var(--_orbita-numero) * 200px + 90px);
+    --_tamaño-orbita: calc(20dvh * var(--_orbita-numero) + 10dvh); /* +90 */
 }
 
 .saturno-contenedor {
@@ -131,7 +165,7 @@
     --_planeta-color: #c2b280;
     --_planeta-nombre: 'SATURNO';
 
-    --_tamaño-orbita: calc(var(--_orbita-numero) * 200px + 190px);
+    --_tamaño-orbita: calc(20dvh * var(--_orbita-numero ) + 20dvh); /* 190 */
 }
 
 .urano-contenedor {
@@ -144,7 +178,7 @@
     --_planeta-color: #00ffff;
     --_planeta-nombre: 'URANO';
 
-    --_tamaño-orbita: calc(var(--_orbita-numero) * 200px + 190px);
+    --_tamaño-orbita: calc(20dvh * var(--_orbita-numero) + 20dvh);
 }
 
 .neptuno-contenedor {
@@ -157,7 +191,7 @@
     --_planeta-color: #000080;
     --_planeta-nombre: 'NEPTUNO';
 
-    --_tamaño-orbita: calc(var(--_orbita-numero) * 200px + 190px);
+    --_tamaño-orbita: calc(20dvh * var(--_orbita-numero) + 20dvh);
 }
 
 
@@ -237,6 +271,94 @@
     }
 }
 
+
+
+
+
+
+.cabeza {
+    width: 100%;
+    height: 80px;
+
+    background-color: #0B0B38;
+    border-bottom: 3px solid white;
+
+    position: fixed;
+    z-index: 150;
+}
+
+.iconos-contenedor {
+    width: 100%;
+    max-width: 1300px;
+    height: inherit;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono-texto {
+    opacity: 0;
+    
+    position: absolute;
+    bottom: -20px;
+
+    font-family: 'calibre';
+    color: white;
+    font-size: 15px;
+
+    transition: all .5s .05s;
+}
+
+.section-iconos {
+    width: 40%;
+    height: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+
+.mid-iconos {
+    width: 10%;
+}
+
+.icono-contenedor {
+    height: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+
+    display: inline-block;
+
+    background: var(--_ruta-icono);
+    background-size: cover;
+
+    transition: transform .4s;
+}
+
+.icono-contenedor:hover {
+    cursor: pointer;
+}
+
+.icono-contenedor:hover > .icono {
+    transform: translateY(-12px);
+}
+
+.icono-contenedor:hover > .icono-texto {
+    opacity: 1;
+
+    bottom: -5px;
+}
 /*
 .contenido-contenedor {
     width: 100%;
