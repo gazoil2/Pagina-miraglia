@@ -39,6 +39,9 @@ article li {
     border-radius: 10px;
 }
 
+.medium-margen{
+    margin-bottom: 10px;
+}
 
 .caracteristica-neputno{
     width: 400px;
@@ -47,4 +50,13 @@ article li {
     position: absolute;
     left: -400px;
     transform: scaleX(-1);
+}
+
+
+@media (max-width: 1024px){
+    .cajaprogress{
+        margin-bottom: 10px;
+    }
+
+    .medium-margen{margin-bottom: unset;}
 }
