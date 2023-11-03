@@ -1,4 +1,11 @@
 header{
     color: white;
-    background-color: black;
+    background-color: var(--color-header);
+}
+
+main {
+    background-color: var(--color-secundario);
+}
+footer{
+   
 }
