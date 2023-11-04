@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/global.css">
     <title>Document</title>
 </head>
 <body>
@@ -69,7 +70,7 @@
         </div>
     </header>
     
-    <div class="pagina-principal conteiner-fluid p-0">
+    <main class="pagina-principal container-fluid d-flex flex-column gap50">
 
         <div class="row fila-solar">
             <div class="col">
@@ -117,27 +118,121 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <div class="container-fluid p-0 ">
-                    <div class="contenido-contenedor"></div>
+        <section class="row">
+
+            <div class="col-lg-10 col-11 container-fluid section sec-1">
+                <div class="row justify-content-around p-5">
+                    <div class="col-lg-7 col-12 d-flex flex-column gap-4">  
+                        <div class="titulo-linea">
+                            <h1 class="title text-center m-0">Sistema Solar</h1>
+                            <hr class="linea">
+                        </div>
+
+                        <div class="texto-contenedor d-flex align-items-center">
+                            <p class="parrafo text-center m-0">Lorem ipsum dolor sit amet consectetur <span>adipisicing</span> elit. Quam, id magnam iste cupiditate nulla placeat, molestias pariatur laboriosam quod possimus, minima provident esse ipsa debitis impedit earum! Recusandae, asperiores quisquam.
+                            Aliquid assumenda maxime <span>aliquam</span> incidunt exercitationem odio nihil? Deleniti, id error illo consequatur temporibus laudantium reprehenderit laborum distinctio quae magni sint molestias veritatis excepturi sunt odio eos nostrum quidem cupiditate?
+                            Corporis beatae veniam et atque blanditiis aut, laborum <span>dolorem</span> eum id ullam unde reprehenderit dolor perspiciatis similique omnis tenetur illum fuga inventore at? Quae velit, hic fugit laborum itaque saepe.</p>
+                        </div>
+                    </div> 
+                    <div class="col-4 px-2 d-none d-lg-block">
+                        <div class="parrafo-contenedor">
+                            <p class="parrafo text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ratione quasi voluptates vero beatae quas repellendus totam nobis? Eum pariatur quo voluptas molestiae ratione adipisci maiores saepe obcaecati aspernatur maxime!
+                            Nulla ex error quis, voluptate tenetur nemo laborum ipsa nisi rerum odio? Unde incidunt mollitia deleniti distinctio veritatis laborum a tempore molestiae voluptate? Praesentium blanditiis consequuntur, rem placeat harum itaque.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </section>
+
+
+        <section class="row">
+
+            <div class="col-lg-10 col-sm-11 col-md-11 container-fluid section sec-2">
+                <div class="row justify-content-between p-5">
+                    <div class="col-md-6 col-12 d-flex justify-content-center align-items-center gap-4">  
+                        <div class="imagen-contenedor">
+                           <img src="imagenes/random_image.png" alt="Imagen del sistema solar minimalista">
+                        </div>
+                    </div> 
+                    <div class="col-md-5 col-12 mt-sm-5 px-2">
+                        <div class="parrafo-contenedor d-flex align-items-center p-sm-4">
+                            <p class="parrafo text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ratione quasi voluptates vero beatae quas repellendus totam nobis? Eum pariatur quo voluptas molestiae ratione adipisci maiores saepe obcaecati aspernatur maxime!
+                            Nulla ex error quis, voluptate tenetur nemo laborum ipsa nisi rerum odio? Unde incidunt mollitia deleniti distinctio veritatis laborum a tempore molestiae voluptate? Praesentium blanditiis consequuntur, rem placeat harum itaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tempora cumque numquam eum nobis saepe ad laborum earum dolores?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="row mb-5">
+
+            <div class="col-lg-10 col-sm-11 container-fluid section sec-3">
+                <div class="row justify-content-around p-5">
+                    <div class="col-md-11 col-12 d-flex flex-column gap-4">  
+                        <div class="titulo-linea">
+                            <h2 class="title text-center m-0">Unete a Nosotros</h2>
+                            <hr class="linea">
+                        </div>
+
+                        <form class="formulario container-fluid">
+
+                            <div class="row form-contenedor d-flex justify-content-around my-5 gap-md-0 gap-5 px-md-0 px-4">
+                                <div class="col d-md-none d-block"></div>
+
+                                <div class="col-md-3 col-12 d-flex align-items-center p-0 my-md-0 my-3">
+                                    <div class="input-contenedor">
+                                        <input type="text">
+                                        <h3>Nombre completo</h3>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-12 d-flex align-items-center p-0 my-md-0 my-3">
+                                    <div class="input-contenedor">
+                                        <input type="date">
+                                        <h3>Fecha de nacimiento</h3>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-12 d-flex align-items-center p-0 my-md-0 my-3">
+                                    <div class="input-contenedor">
+                                        <input type="text">
+                                        <h3>Localidad</h3>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-12 d-flex align-items-center p-0 my-md-0 my-3">
+                                    <div class="input-contenedor">
+                                        <input type="tel">
+                                        <h3>Telefono</h3>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-12 d-flex align-items-center p-0 my-md-0 my-3">
+                                    <div class="input-contenedor">
+                                        <input type="text">
+                                        <h3>Colegio</h3>
+                                    </div>
+                                </div>  
+
+                                <div class="col d-md-none d-block my-2"></div>
+
+                                <button class="boton-formulario">Completar Formulario</button>
+                            </div>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+
+        </section>
+
+    </main>
 
     
 
-    <section class="col-md-12 d-flex mt-5">
-        <div class="col-md-9 text-center">  
-            <h1>Neptuno</h1>
-            <p>Neptuno es el octavo planeta desde el Sol y se caracteriza por su impresionante color azul y fuertes vientos</p>
-        </div> 
-        <div class="col-md-2"">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae cumque illum beatae, laborum dolor quaerat autem possimus consequuntur et enim? Provident voluptates impedit debitis, ducimus cum sunt? Sed, porro dolore.</p>
-        </div>
-    </section>
+
     <!--
     <header class="">caca</header>
     <section class="container-fluid col-md-8">
