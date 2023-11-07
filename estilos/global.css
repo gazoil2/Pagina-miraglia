@@ -13,11 +13,15 @@
     height: 80px;
 
     background-color: #0B0B38;
-    border-bottom: 3px solid white;
 
     position: fixed;
     z-index: 150;
 }
+
+.navbar {
+    border-bottom: 3px solid white;
+}
+
 
 .iconos-contenedor {
     width: 100%;
@@ -25,9 +29,12 @@
     height: inherit;
 
     margin: 0 auto;
+    background-color: #0B0B38;
 
     display: flex;
     justify-content: space-between;
+    
+    transition: height .5s;
 }
 
 .icono-texto {
@@ -90,6 +97,16 @@
 
     bottom: -5px;
 }
+
+
+.navbar .title-contenedor .titulo {
+    font-family: 'calibre';
+    font-size: 26px;
+    text-transform: uppercase;
+    color: white; 
+}
+
+
 /*     HEADER STYLE     */
 
 
