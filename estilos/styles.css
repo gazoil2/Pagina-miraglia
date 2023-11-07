@@ -1,3 +1,6 @@
+
+/*    Index       */
+
 .pagina-principal {
     background: url(/imagenes/space.jpg);
     background-size: contain;
@@ -360,3 +363,134 @@
     color: white;
     font-size: 18px;
 }
+/*    Index       */
+
+
+/*    Colores            */
+
+:root {
+    --color-primario: #ffffff;
+    --color-secundario: #F8F4E3;
+    --color-fondo: #272727;
+    --color-link: #EC9192;
+    --color-header-neptuno: #4817b9;
+    --color-header-marte: #c40e04;
+  }
+
+/*    Colores            */
+
+
+/*    Planetas            */
+
+
+body {
+    background-color: var(--color-secundario);  
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#neptuno-header{
+    background-color: var(--color-header-neptuno);
+}
+
+#marte-header{
+    background-color: var(--color-header-marte);
+}
+
+
+article{
+    text-align: center;
+}
+
+article li {
+    list-style: none;
+}
+
+.contenedorprogress{
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.cajaprogress {
+    display: flex;
+    background-color: #040427eb;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 289px;
+    height: 289px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.medium-margen{
+    margin-bottom: 10px;
+}
+
+.caracteristica-neputno{
+    width: 400px;
+}
+
+@media (max-width: 1024px){
+    .cajaprogress{
+        margin-bottom: 10px;
+    }
+
+    .medium-margen{margin-bottom: unset;}
+}
+
+/*    Planetas            */
+
+
+
+
+/* Error */
+
+
+.error h2{
+    font-weight: unset;
+}
+
+.error footer h2    {
+    font-weight: 500;
+}
+.error h4{
+    font-weight: unset;
+}
+
+.error .alumno h3{
+    font-weight: unset;
+}
+
+.error h3{
+    font-weight:500;
+}
+
+/* Error */
+
+
+/* Neptuno */
+
+.neptuno-main{
+    background-color: #010114eb;
+    color: white;
+}
+
+
+.planeta-main section {
+    padding: 20px;
+    margin: auto;
+}
+
+.marte-main .cajaprogress{
+    background-color: #c83325d2;
+    color: white;
+    border-color: black;
+}
+
+/* Neptuno */
