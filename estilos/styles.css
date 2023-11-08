@@ -34,7 +34,7 @@
 }
 
 .sol-planeta {
-    width: 500px;
+    width: 30vw;
     aspect-ratio: 1;
     background: url(/imagenes/planetas/sol.png);
     background-size: cover;
@@ -45,7 +45,7 @@
 
 .mercurio-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/mercurio.png);
-    --_tamaño-planeta: 45px;
+    --_tamaño-planeta: 4vw;
     --_orbita-numero: 1;
     --_velocidad-rotacion: 1;
     --_orbita-duracion: 5s;
@@ -58,7 +58,7 @@
 
 .venus-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/venus.png);
-    --_tamaño-planeta: 80px;
+    --_tamaño-planeta: 5vw;
     --_orbita-numero: 2;
     --_velocidad-rotacion: 3;
     --_orbita-duracion: 14s;
@@ -71,7 +71,7 @@
 
 .tierra-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/tierra.png);
-    --_tamaño-planeta: 86px;
+    --_tamaño-planeta: 6vw;
     --_orbita-numero: 3;
     --_velocidad-rotacion: 2;
     --_orbita-duracion: 18s;
@@ -84,7 +84,7 @@
 
 .marte-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/marte.png);
-    --_tamaño-planeta: 130px;
+    --_tamaño-planeta: 8vw;
     --_orbita-numero: 4;
     --_velocidad-rotacion: 3;
     --_orbita-duracion: 22s;
@@ -97,7 +97,7 @@
 
 .jupiter-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/jupiter.png);
-    --_tamaño-planeta: 160px;
+    --_tamaño-planeta: 10vw;
     --_orbita-numero: 5;
     --_velocidad-rotacion: 3;
     --_orbita-duracion: 10s;
@@ -110,7 +110,7 @@
 
 .saturno-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/saturno.png);
-    --_tamaño-planeta: 170px;
+    --_tamaño-planeta: 11vw;
     --_orbita-numero: 6;
     --_velocidad-rotacion: 4;
     --_orbita-duracion: 19s;
@@ -123,7 +123,7 @@
 
 .urano-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/urano.svg);
-    --_tamaño-planeta: 100px;
+    --_tamaño-planeta: 7vw;
     --_orbita-numero: 7;
     --_velocidad-rotacion: 4;
     --_orbita-duracion: 23s;
@@ -131,12 +131,12 @@
     --_planeta-color: #00ffff;
     --_planeta-nombre: 'URANO';
 
-    --_tamaño-orbita: calc(10vw * var(--_orbita-numero) + 10vw);
+    --_tamaño-orbita: calc(10vw * var(--_orbita-numero) + 12vw);
 }
 
 .neptuno-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/neptuno.png);
-    --_tamaño-planeta: 80px;
+    --_tamaño-planeta: 6.5vw;
     --_orbita-numero: 8;
     --_velocidad-rotacion: 4;
     --_orbita-duracion: 30s;
@@ -144,7 +144,7 @@
     --_planeta-color: #000080;
     --_planeta-nombre: 'NEPTUNO';
 
-    --_tamaño-orbita: calc(10vw * var(--_orbita-numero) + 15vw);
+    --_tamaño-orbita: calc(10vw * var(--_orbita-numero) + 14vw);
 }
 
 
@@ -224,7 +224,35 @@
     }
 }
 
+@media (max-width: 500px) {
+    .sistema-solar {
+        position: absolute;
+        bottom: -8%;
+        left: -51%;
+    }
 
+    .planeta {
+        width: calc(var(--_tamaño-planeta) * 1.9);
+    }
+
+    .planeta-contenedor {
+        width: calc(var(--_tamaño-orbita) * 1.9);
+    }
+
+    .planeta:hover {
+        width: calc(var(--_tamaño-planeta) * 1.9 + 10px + var(--_tamaño-planeta) / 4);
+    }
+
+    @keyframes planeta_movimiento {
+        from {
+            transform: rotate(var(--_angulo-inicial)) translateX( calc( var(--_tamaño-orbita) / -2 * 1.9) ) rotate(0);
+        }
+    
+        to {
+            transform: rotate(calc(360deg + var(--_angulo-inicial))) translateX( calc( var(--_tamaño-orbita) / -2 * 1.9) ) rotate(calc(360deg * var(--_velocidad-rotacion)));
+        }
+    }
+}
 
 
 .section {
@@ -243,6 +271,17 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     word-spacing: 20px;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .titulo-linea .title {
+        font-size: 44px;
+    }
 }
 
 .linea {
@@ -275,7 +314,6 @@
     gap: 200px
 }
 
-
 .sec-2 .imagen-contenedor img {
     width: 100%;
     max-width: 500px;
@@ -301,11 +339,6 @@
     padding: 0 10px;
 
     position: relative;
-}
-
-.sec-3 .titulo-linea {
-    width: 80%;
-    margin: 0 auto;
 }
 
 .sec-3 .formulario .input-contenedor  {
