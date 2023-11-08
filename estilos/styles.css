@@ -403,11 +403,11 @@
 
 :root {
     --color-primario: #ffffff;
-    --color-secundario: #F8F4E3;
+    --color-secundario: #fff9d5;
     --color-fondo: #272727;
     --color-link: #EC9192;
-    --color-header-neptuno: #361682;
-    --color-header-marte: #c40e04;
+    --color-header-neptuno: #592E83;
+    --color-header-marte: #A8273A;
   }
 
 /*    Colores            */
@@ -421,15 +421,17 @@ body {
 }
 
 header {
-    background-color: #000000;
+
     color: #ffffff;
 }
 
 #neptuno-header{
+    padding-top: 5px;
     background-color: var(--color-header-neptuno);
 }
 
 #marte-header{
+    padding-top: 5px;
     background-color: var(--color-header-marte);
 }
 
@@ -535,7 +537,7 @@ article li {
 }
 
 .hierro {
-    background: conic-gradient(rgb(255, 0, 0) 0%, rgb(255, 166, 0)94%, white 94%, white 100%);
+    background: conic-gradient(rgb(255, 0, 0) 0%, rgb(255, 166, 0)6%, white 6%, white 100%);
 }
 
 .silicio {
@@ -602,5 +604,25 @@ article li {
     color: white;
     border-color: black;
 }
+
+.planeta-main nav a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.neptuno-main nav{
+    padding-bottom: 10px;
+    border-bottom: white 3px solid;
+}
+
+.marte-main nav{
+    padding-bottom: 10px;
+    border-bottom: rgb(0, 0, 0) 3px solid;
+}
+
+.planeta-main nav a:hover{
+    color: #c9c9c9;
+    text-decoration:underline;
+}
+
 
 /* Neptuno */
