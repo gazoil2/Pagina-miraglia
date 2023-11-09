@@ -34,7 +34,7 @@
 }
 
 .sol-planeta {
-    width: 500px;
+    width: 30vw;
     aspect-ratio: 1;
     background: url(/imagenes/planetas/sol.png);
     background-size: cover;
@@ -45,7 +45,7 @@
 
 .mercurio-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/mercurio.png);
-    --_tamaño-planeta: 45px;
+    --_tamaño-planeta: 4vw;
     --_orbita-numero: 1;
     --_velocidad-rotacion: 1;
     --_orbita-duracion: 5s;
@@ -58,7 +58,7 @@
 
 .venus-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/venus.png);
-    --_tamaño-planeta: 80px;
+    --_tamaño-planeta: 5vw;
     --_orbita-numero: 2;
     --_velocidad-rotacion: 3;
     --_orbita-duracion: 14s;
@@ -71,7 +71,7 @@
 
 .tierra-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/tierra.png);
-    --_tamaño-planeta: 86px;
+    --_tamaño-planeta: 6vw;
     --_orbita-numero: 3;
     --_velocidad-rotacion: 2;
     --_orbita-duracion: 18s;
@@ -84,7 +84,7 @@
 
 .marte-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/marte.png);
-    --_tamaño-planeta: 130px;
+    --_tamaño-planeta: 8vw;
     --_orbita-numero: 4;
     --_velocidad-rotacion: 3;
     --_orbita-duracion: 22s;
@@ -97,7 +97,7 @@
 
 .jupiter-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/jupiter.png);
-    --_tamaño-planeta: 160px;
+    --_tamaño-planeta: 10vw;
     --_orbita-numero: 5;
     --_velocidad-rotacion: 3;
     --_orbita-duracion: 10s;
@@ -110,7 +110,7 @@
 
 .saturno-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/saturno.png);
-    --_tamaño-planeta: 170px;
+    --_tamaño-planeta: 11vw;
     --_orbita-numero: 6;
     --_velocidad-rotacion: 4;
     --_orbita-duracion: 19s;
@@ -123,7 +123,7 @@
 
 .urano-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/urano.svg);
-    --_tamaño-planeta: 100px;
+    --_tamaño-planeta: 7vw;
     --_orbita-numero: 7;
     --_velocidad-rotacion: 4;
     --_orbita-duracion: 23s;
@@ -131,12 +131,12 @@
     --_planeta-color: #00ffff;
     --_planeta-nombre: 'URANO';
 
-    --_tamaño-orbita: calc(10vw * var(--_orbita-numero) + 10vw);
+    --_tamaño-orbita: calc(10vw * var(--_orbita-numero) + 12vw);
 }
 
 .neptuno-contenedor {
     --_ruta-imagen: url(/imagenes/planetas/neptuno.png);
-    --_tamaño-planeta: 80px;
+    --_tamaño-planeta: 6.5vw;
     --_orbita-numero: 8;
     --_velocidad-rotacion: 4;
     --_orbita-duracion: 30s;
@@ -144,7 +144,7 @@
     --_planeta-color: #000080;
     --_planeta-nombre: 'NEPTUNO';
 
-    --_tamaño-orbita: calc(10vw * var(--_orbita-numero) + 15vw);
+    --_tamaño-orbita: calc(10vw * var(--_orbita-numero) + 14vw);
 }
 
 
@@ -224,7 +224,35 @@
     }
 }
 
+@media (max-width: 500px) {
+    .sistema-solar {
+        position: absolute;
+        bottom: -8%;
+        left: -51%;
+    }
 
+    .planeta {
+        width: calc(var(--_tamaño-planeta) * 1.9);
+    }
+
+    .planeta-contenedor {
+        width: calc(var(--_tamaño-orbita) * 1.9);
+    }
+
+    .planeta:hover {
+        width: calc(var(--_tamaño-planeta) * 1.9 + 10px + var(--_tamaño-planeta) / 4);
+    }
+
+    @keyframes planeta_movimiento {
+        from {
+            transform: rotate(var(--_angulo-inicial)) translateX( calc( var(--_tamaño-orbita) / -2 * 1.9) ) rotate(0);
+        }
+    
+        to {
+            transform: rotate(calc(360deg + var(--_angulo-inicial))) translateX( calc( var(--_tamaño-orbita) / -2 * 1.9) ) rotate(calc(360deg * var(--_velocidad-rotacion)));
+        }
+    }
+}
 
 
 .section {
@@ -243,6 +271,17 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     word-spacing: 20px;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .titulo-linea .title {
+        font-size: 44px;
+    }
 }
 
 .linea {
@@ -275,7 +314,6 @@
     gap: 200px
 }
 
-
 .sec-2 .imagen-contenedor img {
     width: 100%;
     max-width: 500px;
@@ -301,11 +339,6 @@
     padding: 0 10px;
 
     position: relative;
-}
-
-.sec-3 .titulo-linea {
-    width: 80%;
-    margin: 0 auto;
 }
 
 .sec-3 .formulario .input-contenedor  {
@@ -370,11 +403,11 @@
 
 :root {
     --color-primario: #ffffff;
-    --color-secundario: #F8F4E3;
+    --color-secundario: #fff9d5;
     --color-fondo: #272727;
     --color-link: #EC9192;
-    --color-header-neptuno: #4817b9;
-    --color-header-marte: #c40e04;
+    --color-header-neptuno: #592E83;
+    --color-header-marte: #A8273A;
   }
 
 /*    Colores            */
@@ -388,15 +421,17 @@ body {
 }
 
 header {
-    background-color: #000000;
+
     color: #ffffff;
 }
 
 #neptuno-header{
+    padding-top: 5px;
     background-color: var(--color-header-neptuno);
 }
 
 #marte-header{
+    padding-top: 5px;
     background-color: var(--color-header-marte);
 }
 
@@ -424,7 +459,7 @@ article li {
     width: 289px;
     height: 289px;
     text-align: center;
-    border: 1px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
 }
 
@@ -442,6 +477,83 @@ article li {
     }
 
     .medium-margen{margin-bottom: unset;}
+}
+
+.progreso-conico {
+    position: relative; /* Change position to relative */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%, rgb(55, 0, 255) 25%, rgb(153, 0, 255) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.progreso-conico::before {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #040427;
+}
+
+.progress-text {
+    position: relative; 
+    font-weight: 500;
+    z-index: 1; 
+    color: rgb(255, 255, 255); 
+}
+
+
+.hidrogeno {
+    background: conic-gradient(rgb(17, 0, 255) 0%, rgb(0, 255, 195) 25%, white 25%, white 100%);
+}
+
+.helio {
+    background: conic-gradient(rgb(255, 0, 221) 0%, rgb(255, 0, 60) 80%, white 80%, white 100%);
+}
+
+.metano {
+    background: conic-gradient( rgb(255, 225, 0) 0%, rgb(0, 241, 60) 95%, white 95% ,  white 100%);
+}
+
+.agua {
+    background: conic-gradient(rgb(8, 0, 255) 0%, rgb(0, 247, 255) 97%, white 97%, white 100%);
+}
+
+.amoniaco {
+    background: conic-gradient( rgb(255, 217, 0) 0%, rgb(0, 241, 60) 98%, white 98% ,  white 100%);
+}
+
+
+.otros-elementos {
+    background: conic-gradient(rgb(153, 0, 255) 0%, rgb(221, 0, 255) 20%, #FF6347 40%, #7FFF00 60%, #4682B4 80%, #00FFFF 98%, white 98%, white 100%);
+}
+
+.hierro {
+    background: conic-gradient(rgb(255, 0, 0) 0%, rgb(255, 166, 0)6%, white 6%, white 100%);
+}
+
+.silicio {
+    background: conic-gradient(rgb(0, 0, 0) 0%, rgb(181, 181, 181) 98%, white 98%, white 100%);
+}
+
+.sodio {
+    background: conic-gradient(rgb(181, 181, 181) 0%, rgb(181, 181, 181) 98%, white 98%, white 100%);
+}
+
+.potasio{
+    background: conic-gradient(rgb(255, 179, 0) 0%, rgb(255, 200, 0) 98%, white 98%, white 100%);
+}
+
+.oxigeno{
+    background: conic-gradient(rgb(0, 221, 255) 0%, rgb(0, 170, 255) 98%, white 98%, white 100%);
 }
 
 /*    Planetas            */
@@ -492,5 +604,25 @@ article li {
     color: white;
     border-color: black;
 }
+
+.planeta-main nav a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.neptuno-main nav{
+    padding-bottom: 10px;
+    border-bottom: white 3px solid;
+}
+
+.marte-main nav{
+    padding-bottom: 10px;
+    border-bottom: rgb(0, 0, 0) 3px solid;
+}
+
+.planeta-main nav a:hover{
+    color: #c9c9c9;
+    text-decoration:underline;
+}
+
 
 /* Neptuno */

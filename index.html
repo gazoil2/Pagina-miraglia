@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" href="estilos/global.css">
-    <title>Document</title>
+    <title>Sistema Solar</title>
 </head>
 <body>
 
@@ -20,15 +20,16 @@
 
             <div class="title-contenedor d-flex align-items-center d-md-none mx-sm-4 mx-1 gap-4">
                 <a href="" class="icono d-none d-sm-block" style="--_ruta-icono: url(../imagenes/iconos/solar_system_icon.png)"></a>
-                <h1 class="titulo m-0">Sistema Solar</h1>
+                <h1 class="titulo m-0 ms-3 ms-sm-0">Sistema Solar</h1>
             </div>
 
             <button class="navbar-toggler h-100" type="button" data-toggle="collapse" data-target="#barra-navegacion" aria-controls="barra-navegacion" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="imagenes/amburguesaa/hamburguesa_open.png" height="40px" width="40px" alt="Boton Hamburguesa">
+                <img src="imagenes/amburguesaa/hamburguesa_open.png" height="40" width="40" alt="Boton Hamburguesa">
             </button>
 
-            <div class="iconos-contenedor navbar-collapse collapse show p-0 d-none d-md-block" id="barra-navegacion">
-                <div class="left-iconos section-iconos">
+            <div class="navbar-collapse collapse show p-0" id="barra-navegacion">
+                <div class="iconos-contenedor p-0 d-none d-md-flex">
+                    <div class="left-iconos section-iconos">
                     <div class="icono-contenedor">
                         <a href="paginas/error.html" class="icono" style="--_ruta-icono: url(../imagenes/iconos/urano_icon.png)"></a>
                         <h1 class="icono-texto">URANO</h1>
@@ -48,34 +49,70 @@
                         <a href="paginas/error.html" class="icono" style="--_ruta-icono: url(../imagenes/iconos/mercurio_icon.png)"></a>
                         <h1 class="icono-texto">MERCURIO</h1>
                     </div>
-                </div>
+                    </div>
 
-                <div class="mid-iconos section-iconos">
-                    <div class="icono-contenedor">
-                        <a href="" class="icono" style="--_ruta-icono: url(../imagenes/iconos/solar_system_icon.png)"></a>
-                        <h1 class="icono-texto">SISTEMA SOLAR</h1>
+                    <div class="mid-iconos section-iconos">
+                        <div class="icono-contenedor">
+                            <a href="" class="icono" style="--_ruta-icono: url(../imagenes/iconos/solar_system_icon.png)"></a>
+                            <h1 class="icono-texto">SISTEMA SOLAR</h1>
+                        </div>
+                    </div>
+
+                    <div class="right-iconos section-iconos">
+                        <div class="icono-contenedor">
+                            <a href="paginas/error.html" class="icono" style="--_ruta-icono: url(../imagenes/iconos/venus_icon.png)"></a>
+                            <h1 class="icono-texto">VENUS</h1>
+                        </div>
+
+                        <div class="icono-contenedor">
+                            <a href="paginas/marte.html" class="icono" style="--_ruta-icono: url(../imagenes/iconos/marte_icon.png)"></a>
+                            <h1 class="icono-texto">MARTE</h1>
+                        </div>
+
+                        <div class="icono-contenedor">
+                            <a href="paginas/error.html" class="icono" style="--_ruta-icono: url(../imagenes/iconos/saturno_icon.png)"></a>
+                            <h1 class="icono-texto">SATURNO</h1>
+                        </div>
+
+                        <div class="icono-contenedor">
+                            <a href="paginas/neptuno.html" class="icono" style="--_ruta-icono: url(../imagenes/iconos/neptune_icon.png)"></a>
+                            <h1 class="icono-texto">NEPTUNO</h1>
+                        </div>
                     </div>
                 </div>
 
-                <div class="right-iconos section-iconos">
-                    <div class="icono-contenedor">
-                        <a href="paginas/error.html" class="icono" style="--_ruta-icono: url(../imagenes/iconos/venus_icon.png)"></a>
-                        <h1 class="icono-texto">VENUS</h1>
+                <div class="mobile-header d-flex d-md-none">
+                    <div class="option-contenedor">
+                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/mercurio_icon.png)"></a>
+                        <h1 class="option-texto m-0">Mercurio</h1>
                     </div>
-
-                    <div class="icono-contenedor">
-                        <a href="paginas/marte.html" class="icono" style="--_ruta-icono: url(../imagenes/iconos/marte_icon.png)"></a>
-                        <h1 class="icono-texto">MARTE</h1>
+                    <div class="option-contenedor">
+                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/venus_icon.png)"></a>
+                        <h1 class="option-texto m-0">Venus</h1>
                     </div>
-
-                    <div class="icono-contenedor">
-                        <a href="paginas/error.html" class="icono" style="--_ruta-icono: url(../imagenes/iconos/saturno_icon.png)"></a>
-                        <h1 class="icono-texto">SATURNO</h1>
+                    <div class="option-contenedor">
+                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/tierra_icon.png)"></a>
+                        <h1 class="option-texto m-0">Tierra</h1>
                     </div>
-
-                    <div class="icono-contenedor">
-                        <a href="paginas/neptuno.html" class="icono" style="--_ruta-icono: url(../imagenes/iconos/neptune_icon.png)"></a>
-                        <h1 class="icono-texto">NEPTUNO</h1>
+                    <div class="option-contenedor">
+                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/marte_icon.png)"></a>
+                        <h1 class="option-texto m-0">Marte</h1>
+                    </div>  
+                    <div class="option-contenedor">
+                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/jupiter_icon.png)"></a>
+                        <h1 class="option-texto m-0">Jupiter</h1>
+                    </div>
+                    <div class="option-contenedor">
+                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/saturno_icon.png)"></a>
+                        <h1 class="option-texto m-0">Saturno</h1>
+                    </div>
+                    <div class="option-contenedor">
+                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/urano_icon.png)"></a>
+                        <h1 class="option-texto m-0">Urano</h1>
+                    </div>
+                    <div class="option-contenedor">
+                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/neptune_icon.png)"></a>
+                        <h1 class="option-texto m-0">Neptuno</h1>
                     </div>
                 </div>
             </div>
@@ -91,11 +128,11 @@
                     <div class="sistema-solar">
 
                         <div class="sol-contenedor">
-                            <div href="" class="sol-planeta"></div>
+                            <div class="sol-planeta"></div>
                         </div>
 
                         <div class="planeta-contenedor neptuno-contenedor">
-                            <a href="/paginas/neptuno.html" class="planeta neptuno-planeta"></a>
+                            <a href="paginas/neptuno.html" class="planeta neptuno-planeta"></a>
                         </div>
 
                         <div class="planeta-contenedor urano-contenedor">
@@ -132,8 +169,8 @@
         </div>
 
         <section class="row">
-            <div class="col-lg-10 col-11 container-fluid section sec-1">
-                <div class="row justify-content-around p-5">
+            <div class="col-lg-10 col-12 container-fluid section sec-1">
+                <div class="row justify-content-around p-md-5 p-1">
                     <div class="col-lg-7 col-12 d-flex flex-column gap-4">  
                         <div class="titulo-linea">
                             <h1 class="title text-center m-0">Sistema Solar</h1>
@@ -158,14 +195,15 @@
 
         <section class="row">
             <div class="col-lg-10 col-sm-11 col-md-11 container-fluid section sec-2">
-                <div class="row justify-content-between p-5">
+                <div class="row justify-content-between p-md-5 p-2">
                     <div class="col-md-6 col-12 d-flex justify-content-center align-items-center gap-4">  
-                        <div class="imagen-contenedor">
-                           <img src="imagenes/mission_voyager.jpg"  alt="Sonda Voyager">
+                        <div class="imagen-contenedor mb-5 mb-md-0">
+                           <img class="img-fluid" src="imagenes/mission_voyager.jpg"  alt="Sonda Voyager">
                         </div>
                     </div> 
                     <div class="col-md-5 col-12 mt-sm-5 px-2">
-                        <div class="parrafo-contenedor d-flex align-items-center p-sm-4">
+                        <div class="parrafo-contenedor d-flex align-items-center p-md-4 p-1 flex-column">
+                            <h2 >Mision Voyager</h2>
                             <p class="parrafo text-center">Las misiones Voyager, lanzadas por la NASA en 1977, exploraron Júpiter, Saturno, Urano y Neptuno. Estas sondas proporcionaron valiosa información sobre estos planetas, descubriendo nuevas lunas, anillos y enviando imágenes sorprendentes. Voyager 1 es el objeto humano más lejano en el espacio y ambas sondas continúan comunicando datos a la Tierra después de más de 40 años de su lanzamiento.</p>
                         </div>
                     </div>
@@ -179,7 +217,7 @@
         <section class="row mb-5">
 
             <div class="col-lg-10 col-sm-11 container-fluid section sec-3">
-                <div class="row justify-content-around p-5">
+                <div class="row justify-content-around p-md-5 p-1">
                     <div class="col-md-11 col-12 d-flex flex-column gap-4">  
                         <div class="titulo-linea">
                             <h2 class="title text-center m-0">Unete a Nosotros</h2>
