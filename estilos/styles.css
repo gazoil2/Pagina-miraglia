@@ -782,3 +782,31 @@ article li {
 
 
 /* Neptuno */
+
+
+/* saturno */
+.saturno-main{
+    background-color: #ffffff;
+}
+
+.bg-saturno{
+    background-color: #ffc061;
+}
+
+.bg-saturno nav{
+    border-color: black;
+}
+.saturno-main .cajaprogress{
+    background-color: #ffdb78;
+    border-color: black;
+}
+
+.bg-saturno .icono-texto{
+    color: black;
+}
+
+.carbono {
+    background: conic-gradient( rgb(101, 101, 101) 0% ,rgb(30, 30, 30) 6%,
+    white 6% );
+}
+
