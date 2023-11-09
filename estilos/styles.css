@@ -147,8 +147,10 @@
 
 .bg-main {background-color: #0B0B38;}
 .bg-neptuno {background-color: #0B0B38;}
-.bg-marte {background-color: var(--color-header-marte);}
-
+.bg-marte {background-color: var(--color-header-marte); }
+.bg-marte nav {
+    border-color: black;
+}
 
 /*     HEADER STYLE     */
 
@@ -687,7 +689,7 @@ article li {
 }
 
 .first-seccion {
-    margin-top: 100px !important;
+    margin-top: 80px !important;
 }
 
 .hierro {
