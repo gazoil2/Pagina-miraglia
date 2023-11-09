@@ -15,7 +15,7 @@
         sol: #fdd835   0px 0px 20px #fdd835
     -->
 
-    <header class="cabeza">
+    <header class="cabeza bg-main fixed-top">
         <nav class="navbar navbar-expand-lg navbar-expand-md d-flex p-0 h-100">
 
             <div class="title-contenedor d-flex align-items-center d-md-none mx-sm-4 mx-1 gap-4">
@@ -28,7 +28,7 @@
             </button>
 
             <div class="navbar-collapse collapse show p-0" id="barra-navegacion">
-                <div class="iconos-contenedor p-0 d-none d-md-flex">
+                <div class="iconos-contenedor p-0 d-none d-md-flex bg-azul">
                     <div class="left-iconos section-iconos">
                     <div class="icono-contenedor">
                         <a href="paginas/error.html" class="icono" style="--_ruta-icono: url(../imagenes/iconos/urano_icon.png)"></a>
@@ -52,7 +52,7 @@
                     </div>
 
                     <div class="mid-iconos section-iconos">
-                        <div class="icono-contenedor">
+                        <div class="icono-contenedor presionado">
                             <a href="" class="icono" style="--_ruta-icono: url(../imagenes/iconos/solar_system_icon.png)"></a>
                             <h1 class="icono-texto">SISTEMA SOLAR</h1>
                         </div>
@@ -81,39 +81,39 @@
                     </div>
                 </div>
 
-                <div class="mobile-header d-flex d-md-none">
-                    <div class="option-contenedor">
-                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/mercurio_icon.png)"></a>
+                <div class="mobile-header d-flex d-md-none bg-main" style="--border-color: rgb(70, 70, 170)">
+                    <a class="option-contenedor" href="paginas/error.html">
+                        <img alt="Icono Mercurio" class="option-icono" src="../imagenes/iconos/mercurio_icon.png">
                         <h1 class="option-texto m-0">Mercurio</h1>
-                    </div>
-                    <div class="option-contenedor">
-                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/venus_icon.png)"></a>
+                    </a>
+                    <a class="option-contenedor" href="paginas/error.html">
+                        <img alt="Icono Venus" class="option-icono" src="../imagenes/iconos/venus_icon.png">
                         <h1 class="option-texto m-0">Venus</h1>
-                    </div>
-                    <div class="option-contenedor">
-                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/tierra_icon.png)"></a>
+                    </a>
+                    <a class="option-contenedor" href="paginas/error.html">
+                        <img alt="Icono Tierra" class="option-icono" src="../imagenes/iconos/tierra_icon.png">
                         <h1 class="option-texto m-0">Tierra</h1>
-                    </div>
-                    <div class="option-contenedor">
-                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/marte_icon.png)"></a>
+                    </a>
+                    <a class="option-contenedor" href="paginas/marte.html">
+                        <img alt="Icono Marte" class="option-icono" src="../imagenes/iconos/marte_icon.png">
                         <h1 class="option-texto m-0">Marte</h1>
-                    </div>  
-                    <div class="option-contenedor">
-                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/jupiter_icon.png)"></a>
+                    </a>  
+                    <a class="option-contenedor" href="paginas/error.html">
+                        <img alt="Icono Jupiter" class="option-icono" src="../imagenes/iconos/jupiter_icon.png">
                         <h1 class="option-texto m-0">Jupiter</h1>
-                    </div>
-                    <div class="option-contenedor">
-                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/saturno_icon.png)"></a>
+                    </a>
+                    <a class="option-contenedor" href="paginas/error.html">
+                        <img alt="Icono Saturno" class="option-icono" src="../imagenes/iconos/saturno_icon.png">
                         <h1 class="option-texto m-0">Saturno</h1>
-                    </div>
-                    <div class="option-contenedor">
-                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/urano_icon.png)"></a>
+                    </a>
+                    <a class="option-contenedor" href="paginas/error.html">
+                        <img alt="Icono Urano" class="option-icono" src="../imagenes/iconos/urano_icon.png">
                         <h1 class="option-texto m-0">Urano</h1>
-                    </div>
-                    <div class="option-contenedor">
-                        <a href="" class="option-icono" style="--_ruta-icono: url(../imagenes/iconos/neptune_icon.png)"></a>
+                    </a>
+                    <a class="option-contenedor" href="paginas/neptuno.html">
+                        <img alt="Icono Neptuno" class="option-icono" src="../imagenes/iconos/neptune_icon.png">
                         <h1 class="option-texto m-0">Neptuno</h1>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -169,7 +169,7 @@
         </div>
 
         <section class="row">
-            <div class="col-lg-10 col-12 container-fluid section sec-1">
+            <div class="col-lg-10 col-sm-11 container-fluid section sec-1">
                 <div class="row justify-content-around p-md-5 p-1">
                     <div class="col-lg-7 col-12 d-flex flex-column gap-4">  
                         <div class="titulo-linea">
@@ -178,7 +178,7 @@
                         </div>
         
                         <div class="texto-contenedor d-flex align-items-center">
-                            <p class="parrafo text-center m-0">El sistema solar es un sistema planetario que se compone de una estrella, el Sol, y todos los cuerpos celestes que orbitan a su alrededor. Esto incluye planetas, lunas, asteroides, cometas y otros objetos espaciales. Nuestro sistema solar se formó hace aproximadamente 4.600 millones de años a partir de una nube de gas y polvo en el espacio interestelar.
+                            <p class="parrafo text-center m-0">El <strong>sistema solar</strong> es un sistema planetario que se compone de una estrella, el Sol, y todos los cuerpos celestes que orbitan a su alrededor. Esto incluye planetas, lunas, asteroides, cometas y otros objetos espaciales. Nuestro sistema solar se formó hace aproximadamente <strong>4.600 millones de años</strong> a partir de una nube de gas y polvo en el espacio interestelar.
                             Los planetas en nuestro sistema solar incluyen a Mercurio, Venus, la Tierra, Marte, Júpiter, Saturno, Urano y Neptuno. Además, hay numerosos asteroides y cometas, así como lunas que orbitan alrededor de los planetas.</p>
                         </div>
                     </div> 
