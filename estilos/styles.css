@@ -806,7 +806,9 @@ article li {
 }
 
 .carbono {
-    background: conic-gradient( rgb(101, 101, 101) 0% ,rgb(30, 30, 30) 6%,
-    white 6% );
+    background: conic-gradient( rgb(101, 101, 101) 0% ,rgb(30, 30, 30) 6%,white 6% );
 }
 
+.calcio, .niquel, .azufre, .neon{
+    background: conic-gradient( rgb(33, 69, 187) 0% ,rgb(43, 245, 245) 98%,white 98% );
+}
