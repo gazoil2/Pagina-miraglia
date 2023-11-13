@@ -145,8 +145,8 @@
     text-align: center;
 }
 
-.bg-main {background-color: #ffffff;}
-.bg-neptuno {background-color: #25253f;}
+.bg-main {background-color: #070d38;}
+.bg-neptuno {background-color: #323255;}
 .bg-marte {background-color: var(--color-header-marte); }
 .bg-marte nav {
     border-color: black;
@@ -745,7 +745,7 @@ article li {
 /* Neptuno */
 
 .neptuno-main{
-    background-color: #48487ceb;
+    background-color: #575788eb;
     color: white;
 }
 
