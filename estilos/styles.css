@@ -101,6 +101,7 @@
     font-size: 26px;
     text-transform: uppercase;
     color: white; 
+    text-decoration: none;
 }
 
 .mobile-header {
@@ -123,7 +124,11 @@
     flex-basis: 21%;
     margin-bottom: 15px;
     text-decoration: none;
-    color: white;
+    color: var(--font-color, white);
+}
+
+.option-contenedor:hover {
+    color: var(--font-color, white);
 }
 
 
@@ -794,7 +799,7 @@ article li {
 }
 
 .bg-saturno nav{
-    border-color: black;
+    border-color: gray;
 }
 .saturno-main .cajaprogress{
     background-color: #ffdb78;
