@@ -385,35 +385,14 @@
     }
 }
 
-@media (max-width: 600px) {
-    .sistema-solar {
-        position: absolute;
-        bottom: -8%;
-        left: -51%;
-    }
-
-    .planeta {
-        width: calc(var(--_tamaño-planeta) * 1.9);
-    }
-
-    .planeta-contenedor {
-        width: calc(var(--_tamaño-orbita) * 1.9);
-    }
-
-    .planeta:hover {
-        width: calc(var(--_tamaño-planeta) * 1.9 + 10px + var(--_tamaño-planeta) / 4);
-    }
-
-    @keyframes planeta_movimiento {
-        from {
-            transform: rotate(var(--_angulo-inicial)) translateX( calc( var(--_tamaño-orbita) / -2 * 1.9) ) rotate(0);
-        }
-    
-        to {
-            transform: rotate(calc(360deg + var(--_angulo-inicial))) translateX( calc( var(--_tamaño-orbita) / -2 * 1.9) ) rotate(calc(360deg * var(--_velocidad-rotacion)));
-        }
+@media (max-width: 200px) {
+    .navbar .title-contenedor,
+    .navbar .title-contenedor .titulo {
+        margin: 0 !important;
     }
 }
+
+
 
 
 .section {
@@ -543,7 +522,8 @@
 
 .boton-formulario {
     width: 200px;
-    height: 35px;
+    height: auto;
+    min-height: 35px;
 
     position: absolute;
     bottom: 5px;
@@ -636,10 +616,16 @@ article li {
     .medium-margen{margin-bottom: unset;}
 }
 
+.main-descripcion {
+    font-size: 20px;
+    line-height: 120%;
+}
+
 .progreso-conico {
     position: relative; /* Change position to relative */
-    width: 100px;
-    height: 100px;
+    width: 80%;
+    max-width: 175px;
+    aspect-ratio: 1;
     border-radius: 50%;
     background: conic-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%, rgb(55, 0, 255) 25%, rgb(153, 0, 255) 100%);
     display: flex;
@@ -723,7 +709,41 @@ article li {
 
 
 /* Error */
+.error {
+    background-color:#010114f4;
+}
 
+.first-seccion {
+    font-family: 'calibre';
+    position: relative;
+
+    overflow: hidden;
+}
+
+.error .main-titulo {
+    font-size: 130px;
+    line-height: 115px;
+    color: #3333D7;
+}
+
+.error .main-imagen {
+    position: absolute;
+    opacity: .3;
+
+    left: var(--pos-x);
+    top: var(--pos-y);
+    filter: grayscale(1)
+}
+
+.error .main-desc {
+    font-size: 28px;
+    opacity: .8;
+    color: white;
+}
+
+.error .primera-row {
+    height: 100svh;
+}
 
 .error h2{
     font-weight: unset;
@@ -742,6 +762,74 @@ article li {
 
 .error h3{
     font-weight:500;
+}
+
+.error .alumno {
+    background-color: #010114;
+    border-radius: 10px;
+}
+
+.error .alumno .img-fluid {
+    border-radius: 5px;
+}
+
+.error .footer-titulo {
+    font-family: 'calibre';
+    font-size: 40px;
+    color: #3333D7;
+}
+
+
+.alumno h3 {
+    font-family: 'calibre';
+    font-size: 25px;
+    color: #5959DE;
+}
+
+.subcontent-contenedor h3 {
+    color: #5959DE;
+}
+
+.subcontent-contenedor a,
+.subcontent-contenedor h4 {
+    color: rgb(228, 228, 228);
+    margin: 15px 0;
+}
+
+.subcontent-contenedor a {
+    text-decoration: underline #3333D7;
+    transition: all .5s;
+}
+
+.subcontent-contenedor a:hover {
+    text-decoration: underline white;
+}
+
+@media (max-width: 400px) {
+
+    .error .main-titulo {
+        font-size: 90px;
+    }
+
+    .error .main-desc {
+        font-size: 20px;
+    }
+
+    .error .footer-titulo {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 200px) {
+    .error .main-titulo {
+        font-size: 70px;
+        line-height:60px;
+    }
+
+    .error .main-desc {
+        font-size: 15px;
+    }
 }
 
 /* Error */
@@ -785,6 +873,69 @@ article li {
     text-decoration:underline;
 }
 
+@media (max-width: 300px) {
+    .navbar .title-contenedor .titulo {
+        width: 70px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .navbar-toggler img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .fila-solar {
+        display: none;
+    }
+
+    .segunda-fila {
+        margin-top: 150px;
+    }
+
+    .boton-formulario {
+        width: 90%;
+        right: 5%;
+    }
+
+    .title {
+        font-size: 36px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .sistema-solar {
+        position: absolute;
+        bottom: -8%;
+        left: -51%;
+    }
+
+    .planeta {
+        width: calc(var(--_tamaño-planeta) * 1.9);
+    }
+
+    .planeta-contenedor {
+        width: calc(var(--_tamaño-orbita) * 1.9);
+    }
+
+    .planeta:hover {
+        width: calc(var(--_tamaño-planeta) * 1.9 + 10px + var(--_tamaño-planeta) / 4);
+    }
+
+    @keyframes planeta_movimiento {
+        from {
+            transform: rotate(var(--_angulo-inicial)) translateX( calc( var(--_tamaño-orbita) / -2 * 1.9) ) rotate(0);
+        }
+    
+        to {
+            transform: rotate(calc(360deg + var(--_angulo-inicial))) translateX( calc( var(--_tamaño-orbita) / -2 * 1.9) ) rotate(calc(360deg * var(--_velocidad-rotacion)));
+        }
+    }
+
+    .planeta-contenedor::after {
+        display: none;
+    }
+}
 
 /* Neptuno */
 
