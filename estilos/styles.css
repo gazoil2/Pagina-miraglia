@@ -297,7 +297,7 @@
 
 .neptuno-contenedor {
     --_ruta-imagen: url(../imagenes/planetas/neptuno.png);
-    --_tamaño-planeta: 6.5vw;
+    --_tamaño-planeta: 6vw;
     --_orbita-numero: 8;
     --_velocidad-rotacion: 4;
     --_orbita-duracion: 30s;
@@ -348,7 +348,7 @@
     aspect-ratio: 1;
 
     background: var(--_ruta-imagen);
-    background-size: cover;
+    background-size: contain;
 
     border-radius: 50%;
 
@@ -900,6 +900,17 @@ article li {
 
     .title {
         font-size: 36px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .planeta-contenedor::after {
+        font-size: 20px;
+        transform: translateY(20px);
+    }
+
+    .planeta-contenedor:hover::after {
+        transform: translateY(10px);
     }
 }
 
