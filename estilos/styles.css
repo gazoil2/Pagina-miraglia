@@ -163,7 +163,7 @@
 /*    Index       */
 
 .pagina-principal {
-    background: url(/imagenes/space.jpg);
+    background: url(../imagenes/space.jpg);
     background-size: contain;
 }
 
@@ -197,7 +197,7 @@
 .sol-planeta {
     width: 30vw;
     aspect-ratio: 1;
-    background: url(/imagenes/planetas/sol.png);
+    background: url(../imagenes/planetas/sol.png);
     background-size: cover;
 }
 
@@ -205,7 +205,7 @@
 
 
 .mercurio-contenedor {
-    --_ruta-imagen: url(/imagenes/planetas/mercurio.png);
+    --_ruta-imagen: url(../imagenes/planetas/mercurio.png);
     --_tamaño-planeta: 4vw;
     --_orbita-numero: 1;
     --_velocidad-rotacion: 1;
@@ -218,7 +218,7 @@
 }
 
 .venus-contenedor {
-    --_ruta-imagen: url(/imagenes/planetas/venus.png);
+    --_ruta-imagen: url(../imagenes/planetas/venus.png);
     --_tamaño-planeta: 5vw;
     --_orbita-numero: 2;
     --_velocidad-rotacion: 3;
@@ -231,7 +231,7 @@
 }
 
 .tierra-contenedor {
-    --_ruta-imagen: url(/imagenes/planetas/tierra.png);
+    --_ruta-imagen: url(../imagenes/planetas/tierra.png);
     --_tamaño-planeta: 6vw;
     --_orbita-numero: 3;
     --_velocidad-rotacion: 2;
@@ -244,7 +244,7 @@
 }
 
 .marte-contenedor {
-    --_ruta-imagen: url(/imagenes/planetas/marte.png);
+    --_ruta-imagen: url(../imagenes/planetas/marte.png);
     --_tamaño-planeta: 8vw;
     --_orbita-numero: 4;
     --_velocidad-rotacion: 3;
@@ -257,7 +257,7 @@
 }
 
 .jupiter-contenedor {
-    --_ruta-imagen: url(/imagenes/planetas/jupiter.png);
+    --_ruta-imagen: url(../imagenes/planetas/jupiter.png);
     --_tamaño-planeta: 10vw;
     --_orbita-numero: 5;
     --_velocidad-rotacion: 3;
@@ -270,7 +270,7 @@
 }
 
 .saturno-contenedor {
-    --_ruta-imagen: url(/imagenes/planetas/saturno.png);
+    --_ruta-imagen: url(../imagenes/planetas/saturno.png);
     --_tamaño-planeta: 11vw;
     --_orbita-numero: 6;
     --_velocidad-rotacion: 4;
@@ -283,7 +283,7 @@
 }
 
 .urano-contenedor {
-    --_ruta-imagen: url(/imagenes/planetas/urano.svg);
+    --_ruta-imagen: url(../imagenes/planetas/urano.svg);
     --_tamaño-planeta: 7vw;
     --_orbita-numero: 7;
     --_velocidad-rotacion: 4;
@@ -296,7 +296,7 @@
 }
 
 .neptuno-contenedor {
-    --_ruta-imagen: url(/imagenes/planetas/neptuno.png);
+    --_ruta-imagen: url(../imagenes/planetas/neptuno.png);
     --_tamaño-planeta: 6.5vw;
     --_orbita-numero: 8;
     --_velocidad-rotacion: 4;
